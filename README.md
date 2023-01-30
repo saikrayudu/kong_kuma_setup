@@ -11,6 +11,7 @@
 * Helm3
 * Kubernetes Cluster (K3's)
 * Kong Ingress Controller
+* kuma
 
 
 ### Installation
