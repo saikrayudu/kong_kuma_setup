@@ -60,3 +60,15 @@ $ chmod 700 get_helm.sh
 $ ./get_helm.sh
 
 ```
+
+#### kong  installation using helm charts
+ The following are the commands to install  **kong** for kubernetes
+```
+$ helm repo add kong https://charts.konghq.com
+$ helm repo update
+
+
+# Helm 3
+$ helm install kong/kong --generate-name --set ingressController.installCRDs=false -n kong --create-namespace
+
+```
