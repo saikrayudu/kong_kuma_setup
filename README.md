@@ -73,8 +73,8 @@ $ helm install kong/kong --generate-name --set ingressController.installCRDs=fal
 
 ```
 
-#### kuma-mesh installation using helm charts
- The following are the commands to install  **kong** for kubernetes
+#### kuma installation using helm charts
+ The following are the commands to install  **kuma** for kubernetes
 ```
 $ helm repo add kuma https://kumahq.github.io/charts
 $ helm install --create-namespace --namespace kuma-system kuma kuma/kuma
