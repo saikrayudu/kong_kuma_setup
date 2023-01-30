@@ -118,3 +118,24 @@ Port forward the service to the namespace on port 5000:
 $ kubectl port-forward svc/demo-app -n kuma-demo 5000:5000
 
 ```
+
+####  Explore the mesh
+
+The demo app includes the kuma.io/sidecar-injection label enabled on the kuma-demo namespace. This means that Kuma already knows that it needs to automatically inject a sidecar proxy to every Kubernetes deployment in the default Mesh resource:
+
+```
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kuma-demo
+  namespace: kuma-demo
+  labels:
+    kuma.io/sidecar-injection: enabled
+
+```
+Run:
+
+```
+kubectl get namespace kuma-demo -oyaml
+
+```
