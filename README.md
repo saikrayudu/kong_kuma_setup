@@ -44,10 +44,19 @@ $ sudo apt install docker-compose
 
 ```
  #### Here we are using the K3's cluster
- The following are the commands to install K3's cluster:
+ The following are the commands to install **K3's cluster**
 ```
 $ curl -sfL https://get.k3s.io | sh -
 $ export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
 $ sudo chmod 644 $KUBECONFIG
+
+```
+
+#### Helm  installation
+ The following are the commands to install  **Helm** 
+```
+$ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+$ chmod 700 get_helm.sh
+$ ./get_helm.sh
 
 ```
