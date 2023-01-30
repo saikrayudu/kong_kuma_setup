@@ -107,3 +107,14 @@ Two different YAML files are available:
 demo.yaml installs the basic resources
 demo-v2.yaml installs the frontend service with different colors. This lets you more clearly view routing across multiple versions, for example.
 gateway.yaml installs a builtin gateway
+
+Install resources in a kuma-demo namespace:
+```
+$ kubectl apply -f demo.yaml
+
+```
+Port forward the service to the namespace on port 5000:
+```
+$ kubectl port-forward svc/demo-app -n kuma-demo 5000:5000
+
+```
