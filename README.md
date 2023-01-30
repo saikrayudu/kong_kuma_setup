@@ -90,3 +90,14 @@ To access Kuma we need to first port-forward the API service with:
 $ kubectl port-forward svc/kuma-control-plane -n kuma-system 5681:5681
 
 ```
+####  Explore Kuma with the Kubernetes demo app
+
+To start learning how Kuma works, you can download and run a simple demo application that consists of two services:
+
+demo-app: web application that lets you increment a numeric counter
+redis: data store for the counter
+
+### pre-requisites
+
+* Kuma installed on your Kubernetes cluster
+* Demo app downloaded from GitHub (https://github.com/kumahq/kuma-counter-demo)
