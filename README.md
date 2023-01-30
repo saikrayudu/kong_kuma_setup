@@ -43,7 +43,11 @@ $ sudo usermod -aG docker $USER
 $ sudo apt install docker-compose
 
 ```
-### Create a Docker-compose file
+ #### Here we are using the K3's cluster
+ The following are the commands to install K3's cluster:
 ```
-$ vim docker-compose.yaml
+$ curl -sfL https://get.k3s.io | sh -
+$ export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
+$ sudo chmod 644 $KUBECONFIG
+
 ```
