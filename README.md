@@ -165,3 +165,14 @@ status:
   phase: Active
 
 ```
+
+You can view the sidecar proxies that are connected to the Kuma control plane:
+
+Kuma ships with a read-only GUI that you can use to retrieve Kuma resources. By default the GUI listens on the API port and defaults to :5681/gui.
+
+To access Kuma we need to first port-forward the API service with:
+
+```
+kubectl port-forward svc/kuma-control-plane -n kuma-system 5681:5681
+
+```
