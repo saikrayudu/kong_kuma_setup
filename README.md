@@ -101,3 +101,9 @@ redis: data store for the counter
 
 * Kuma installed on your Kubernetes cluster
 * Demo app downloaded from GitHub (https://github.com/kumahq/kuma-counter-demo)
+
+Two different YAML files are available:
+
+demo.yaml installs the basic resources
+demo-v2.yaml installs the frontend service with different colors. This lets you more clearly view routing across multiple versions, for example.
+gateway.yaml installs a builtin gateway
