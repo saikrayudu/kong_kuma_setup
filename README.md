@@ -176,3 +176,4 @@ To access Kuma we need to first port-forward the API service with:
 kubectl port-forward svc/kuma-control-plane -n kuma-system 5681:5681
 
 ```
+And then navigate to localhost:5681/gui to see the GUI.
