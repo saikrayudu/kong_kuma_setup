@@ -114,9 +114,6 @@ $ ln -s $PWD/kuma-2.0.2/bin/kumactl /usr/local/bin/kumactl
 
 $ kumactl install control-plane | kubectl apply -f -
 
-
-
-
 ```
 
 Two different YAML files are available:
