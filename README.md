@@ -102,6 +102,23 @@ redis: data store for the counter
 * Kuma installed on your Kubernetes cluster
 * Demo app downloaded from GitHub (https://github.com/kumahq/kuma-counter-demo)
 
+
+#### kumactl installation:
+ The following are the commands to install  ***kumactl* for kubernetes
+ 
+ To run Kuma on Kubernetes, you need to download the Kuma cli (kumactl) on your machine.
+```
+$ curl -L https://kuma.io/installer.sh | VERSION=2.0.2 sh -
+
+$ ln -s $PWD/kuma-2.0.2/bin/kumactl /usr/local/bin/kumactl
+
+$ kumactl install control-plane | kubectl apply -f -
+
+
+
+
+```
+
 Two different YAML files are available:
 
 demo.yaml installs the basic resources
